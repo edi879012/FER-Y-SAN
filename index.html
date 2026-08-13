@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1> FER Y SAN<br><img src="img/PORTADA2.jpg" alt="Logo del Proyectos" width="300"></h1>
+        <h2>Detalles para toda ocasión.</h2>
+    </header>
+    <nav>
+        <ul>
+        <li><a class="menu" href="Nuestros Servicios">Nuestros Servicios</a></li>
+        <li><a class="menu" href="Siguenos en nuestras redes">Siguenos en nuestras redes</a></li>
+        <li><a class="menu" href="Contactanos">Contactanos</a></li>
+        <li><a class="menu" href="Galeria">Galería</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section><h2>Bienvenidos</h2>
+        <p>Somos un emprendimiento familiar enfocado en la elaboración de todo tipo de detalles para toda ocasión.</p>
+        <img src="img/1.jpg" width="194" alt="Arreglo Floral">&nbsp
+        <img src="img/2.jpg" width="201">&nbsp
+        <img src="img/3.jpg" width="215">&nbsp
+        </section>
+        <section id="Nuestros Servicios">
+            <h2>Nuestros Servicios</h2>
+                <ul>
+                <li class="menu">Flores eternas</li><br>
+                <li class="menu">Arreglos personalizados</li><br>
+                <li class="menu">Detalles frutales</li><br>
+                <li class="menu">Desayunos personalizados</li><br>
+                </ul>
+        </section>
+    </main>
+    <section>
+    <table>
+      <caption><h3>Disfruta de:</h3></caption>
+        <thead>
+            <tr>
+            <th>Producto</th>
+            <th>Rango de Precio</th>
+            <th>Tiempo para realizar el pedido</th>
+            <th>Horario de Entrega </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Salchipapa</td>
+                <td>Desde $1</td>
+                <td>12 horas antes</td>
+                <td>Todo el día</td>
+            </tr>
+            <tr>
+                <td>Desayunos</td>
+                <td>Desde $2</td>
+                <td>12 horas antes</td>
+                <td>8am a 10 am</td>
+            </tr>
+            <tr>
+                <td>Gelatinas</td>
+                <td>Desde $0.5</td>
+                <td>12 horas antes</td>
+                <td>Todo el día</td>
+            </tr>
+            <tr>
+                <td>Flores Eternas</td>
+                <td>Desde $1</td>
+                <td>3 horas antes</td>
+                <td>Todo el día</td>
+            </tr>
+            <tr>
+                <td>Flores de limpiapipas</td>
+                <td>Desde $1</td>
+                <td>3 horas antes</td>
+                <td>Todo el día</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section class="cards">
+        <div class="card">
+        <h3>Acerca de Nosotros</h3>
+        <p>Nuestro objetivo es acompañarte en los mejores momentos con un detalle personalizado.</p>
+        </div>
+        <div class="card">
+        <h3>Galería</h3>
+        <p>Disponible toda nuestra galeria siempre para ti y a los mejores precios.</p>
+        </div>
+        <div class="card">
+        <h3>Contactanos</h3>
+        <p>0995227756</p>
+        <p>0984466052</p>
+        </div>
+    </section>
+<SECtion>
+    <h2>Regitrate para recibir ofertas</h2>
+            <form>
+            <label>Nombre: </label>
+            <input type="text"><br>
+            <label>Correo :   </label>
+            <input type="email"><br>
+            <label>Contraseña:</label>
+            <input type="password"><br>
+            <label>Ciudad: </label>
+            <input type="text"><br>
+            <label>Contacto: </label>
+            <input type="text"><br>
+            <label>Fecha Nac.:</label>
+            <input type="date"><br>  
+         </form><br>
+        <button onclick="Registrarse()">
+            Registrarse
+            </button>    
+    </SECtion>
+<section id="servicios">
+    <h3> Siguenos en nuestras redes</h3>
+    <ul>
+        <a class="menu" target="_blank" href="https://vt.tiktok.com/ZSCHmYo7o/"> <strong>Tiktok</strong></a><br><br>
+        <a class="menu" target="_blank" href="https://www.facebook.com/"> <strong>Facebook</strong></a><br><br>
+    </ul>
+ </section>  
+<hr>
+<form>
+    <label for="comentario"><em>Déjanos tu comentario</em></label><br><br>
+    <textarea name="comentario" id="comentario" placeholder="ingrese comentario"></textarea>
+</form><hr>
+
+<script src="script2.js"></script>
+<h2 id="mensaje">
+</h2>
+<button onclick="mostrarInformacion()">
+Mostrar Información
+</button>
+<input type="text" id="nombreUsuario">
+
+<button onclick="capturarDato()">
+Enviar
+</button>
+<h3 id="tituloProyecto">
+Fer y San
+</h3>
+<button onclick="actualizarTitulo()">
+Actualizar Título
+</button>
+<button onclick="cambiarColor()">
+Cambiar Tema
+</button>
+<hr>
+<input type="text" id="campoValidacion">
+
+<button onclick="validarCampo()">
+Validar
+</button>
+<hr>
+<button onclick="sumarClick()">
+Registrar Acción
+</button>
+<p id="contador">
+    0
+</p>
+<hr>
+<h2 id="reloj"></h2>
+
+<div id="informacionProyecto"></div>
+
+<input type="text" id="datoGuardar">
+    <button id="guardar">
+    Guardar
+    </button>
+<h3 id="datoRecuperado"></h3>
+<div id="contenedor"></div>
+<ul id="lista"></ul>    
+<button id="eliminar">
+Eliminar Último
+</button>
+<hr>
+    </main>
+    <footer>
+        <p>Proyecto desarrollado por: Edison Cevallos</p>
+        <p>Materia: Introducción a la Tecnología Web</p>
+        <p>Derechos Reservados</p>
+        <p>2026</p>
+
+    </footer>
+</body>
+
+</html>
+<body>
+    
+</body>
