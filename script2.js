@@ -57,10 +57,5 @@ document.getElementById("contador").innerHTML =
 contador; 
  
 } 
-setInterval(function(){ 
  
-let fecha = new Date(); 
- 
-document.getElementById("reloj").innerHTML = 
-fecha.toLocaleTimeString(); 
-},1000);
+ha.toLocaleTimeString
